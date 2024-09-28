@@ -95,7 +95,12 @@ button {
   align-items: center;
   justify-content: center;
 }
-.wrapper-top span {
+.page-top img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.page-top span {
   color: rgb(252, 251, 252);
 }
 .page-wrapper {
