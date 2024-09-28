@@ -96,14 +96,6 @@ a {
   background-repeat: no-repeat;
   background-size: 16px 16px;
 }
-.nav-setting img {
-  width: 16px;
-  height: 16px;
-}
-.nav-setting img.active {
-  width: 16px;
-  height: 16px;
-}
 .navigation ul {
   width: 100%;
   display: flex;
@@ -117,10 +109,9 @@ a {
   justify-content: center;
 }
 .navigation ul li img {
-  width: 35px;
-  height: 35px;
+  width: 24px;
+  height: 24px;
   object-fit: cover;
-  filter: brightness(20%);
 }
 .navigation ul li img.active {
   filter: brightness(100%);
@@ -156,6 +147,7 @@ a {
   object-fit: contain;
 }
 .page-top span {
+  margin-left: 6px;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.5px;
