@@ -190,7 +190,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.page-bottom button {
+.page-button {
   width: 49.8%;
   height: 100%;
   color: rgb(252, 251, 252);
@@ -199,14 +199,14 @@ a {
   box-shadow: rgb(22, 20, 22) 0px 0.5px 1px 0px,
     rgb(73, 71, 73) 0px 0.5px 0px 0px inset;
 }
-.page-bottom button.active {
+.button-create {
   background: #50d2cb;
   color: rgb(22, 20, 22);
 }
-.page-bottom button:hover:not(.active) {
+.button-existing:hover {
   background: rgb(70 67 70);
 }
-.page-bottom button.active:hover {
+.button-create:hover {
   background: #83d6d1;
 }
 .page-emoji {
@@ -273,4 +273,29 @@ a {
 }
 .footer__link.check {
   color: #50d2cb;
+}
+/*---create-page---*/
+.create-page {
+  background: #50d2cb;
+  /* background: #272527; */
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  z-index: 1001;
+}
+.create-page.active {
+  height: 100%;
+}
+.create-page-top {
+  position: absolute;
+  top: 0%;
+  z-index: 9;
+  width: 100%;
+  height: 41px;
+  app-region: drag;
+  user-select: none;
+  box-shadow: none;
 }
