@@ -201,6 +201,8 @@ a {
   box-shadow: rgb(22, 20, 22) 0px 0.5px 1px 0px,
     rgb(73, 71, 73) 0px 0.5px 0px 0px inset;
 }
+.page-button.active {
+}
 .button-create {
   background: #50d2cb;
   color: rgb(22, 20, 22);
@@ -314,21 +316,8 @@ a {
 .create-page-btn.active {
   color: rgb(252, 251, 252);
 }
-
-@keyframes slideUp {
-  0% {
-    transform: translate(-50%, 100%);
-  }
-  100% {
-    transform: translate(-50%, -50%);
-  }
-}
-
-@keyframes slideDown {
-  0% {
-    transform: translate(-50%, -50%);
-  }
-  100% {
-    transform: translate(-50%, 100%);
-  }
+.create-page-inner {
+  width: 236px;
+  margin: 38px auto 24px;
+  word-break: break-word;
 }
