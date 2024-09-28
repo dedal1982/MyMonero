@@ -354,3 +354,17 @@ a {
   color: rgb(141, 139, 141);
   line-height: 20px;
 }
+.create-item p span {
+  text-decoration: underline;
+}
+.create-item p a {
+  color: #11bbec;
+  cursor: pointer;
+  -webkit-user-select: none;
+}
+.create-page-span {
+  background-color: rgb(48, 45, 47);
+  height: 1px;
+  width: 236px;
+  margin: 0px auto 20px;
+}
