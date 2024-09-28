@@ -5,6 +5,7 @@ const nextBtn = document.querySelector(".next-btn");
 const createGoBtn = document.querySelector(".create-page-go");
 const checkedGo = createGoBtn.querySelector(".checked-go");
 const createMnemonic = document.querySelector(".create-mnemonic");
+const backButton = document.querySelector(".back-button");
 
 if (buttonCreate) {
   buttonCreate.addEventListener("click", () => {
@@ -28,5 +29,11 @@ if (createGoBtn) {
 if (nextBtn) {
   nextBtn.addEventListener("click", () => {
     createMnemonic.classList.add("active");
+  });
+}
+
+if (backButton) {
+  backButton.addEventListener("click", () => {
+    createMnemonic.classList.remove("active");
   });
 }
