@@ -52,3 +52,31 @@ if (backIn) {
     mnemonicIn.classList.remove("active");
   });
 }
+
+//mnemonic-in
+// const mnemonicInBtns = document.querySelectorAll(".mnemonic-in-btn");
+// const mnemonicInPage = document.querySelector(".mnemonic-inner");
+
+// if (mnemonicInBtns) {
+//   mnemonicInBtns.forEach((item) => {
+//     item.addEventListener("click", () => {
+//       const newElement = document.createElement("div");
+//       newElement.className = "mnemonic-in-btn";
+//       newElement.textContent = item.textContent;
+//       mnemonicInPage.appendChild(newElement);
+//     });
+//   });
+// }
+const mnemonicInBtns = document.querySelectorAll(".mnemonic-in-btn");
+const mnemonicInPage = document.querySelector(".mnemonic-in-inner");
+
+if (mnemonicInBtns) {
+  mnemonicInBtns.forEach((item) => {
+    item.addEventListener("click", () => {
+      const newElement = document.createElement("div");
+      newElement.className = "mnemonic-in-btn";
+      newElement.textContent = item.textContent;
+      mnemonicInPage.appendChild(newElement);
+    });
+  });
+}
