@@ -4,7 +4,7 @@ const cancelBtn = document.querySelector(".cancel-btn");
 const nextBtn = document.querySelector(".next-btn");
 const createGoBtn = document.querySelector(".create-page-go");
 const checkedGo = createGoBtn.querySelector(".checked-go");
-const createMnemonic = document.querySelector(".create-mnemonic");
+const createMnemonic = document.querySelector(".mnemonic");
 const backButton = document.querySelector(".back-button");
 
 if (buttonCreate) {
