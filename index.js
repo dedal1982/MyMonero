@@ -8,6 +8,7 @@ const createMnemonic = document.querySelector(".mnemonic");
 const backButton = document.querySelector(".back-button");
 const mnemonicIn = document.querySelector(".mnemonic-in");
 const mnemonicInBtn = document.getElementById("mnemonicIn");
+const backIn = document.getElementById("backIn");
 
 if (buttonCreate) {
   buttonCreate.addEventListener("click", () => {
@@ -43,5 +44,11 @@ if (backButton) {
 if (mnemonicInBtn) {
   mnemonicInBtn.addEventListener("click", () => {
     mnemonicIn.classList.add("active");
+  });
+}
+
+if (backIn) {
+  backIn.addEventListener("click", () => {
+    mnemonicIn.classList.remove("active");
   });
 }
