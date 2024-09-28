@@ -572,3 +572,9 @@ a {
 .mnemonic-in.active {
   right: 0;
 }
+.mnemonic-in-choice {
+  padding: 24px;
+  width: calc(100% - 30px);
+  text-align: center;
+  margin: 10px 16px 0;
+}
