@@ -13,6 +13,7 @@ const walletBtn = document.getElementById("walletBtn");
 const walletPage = document.querySelector(".wallet-page");
 const walletPageBoxBtn = document.querySelector(".wallet-page-box");
 const walletTransact = document.querySelector(".wallet-transact");
+const backInTwo = document.getElementById("backInTwo");
 
 if (buttonCreate) {
   buttonCreate.addEventListener("click", () => {
@@ -66,6 +67,12 @@ if (walletBtn) {
 if (walletPageBoxBtn) {
   walletPageBoxBtn.addEventListener("click", () => {
     walletTransact.classList.add("active");
+  });
+}
+
+if (backInTwo) {
+  backInTwo.addEventListener("click", () => {
+    walletTransact.classList.remove("active");
   });
 }
 //mnemonic-in
