@@ -11,6 +11,8 @@ const mnemonicInBtn = document.getElementById("mnemonicIn");
 const backIn = document.getElementById("backIn");
 const walletBtn = document.getElementById("walletBtn");
 const walletPage = document.querySelector(".wallet-page");
+const walletPageBoxBtn = document.querySelector(".wallet-page-box");
+const walletTransact = document.querySelector(".wallet-transact");
 
 if (buttonCreate) {
   buttonCreate.addEventListener("click", () => {
@@ -61,6 +63,11 @@ if (walletBtn) {
   });
 }
 
+if (walletPageBoxBtn) {
+  walletPageBoxBtn.addEventListener("click", () => {
+    walletTransact.classList.add("active");
+  });
+}
 //mnemonic-in
 // const mnemonicInBtns = document.querySelectorAll(".mnemonic-in-btn");
 // const mnemonicInPage = document.querySelector(".mnemonic-inner");
