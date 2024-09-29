@@ -796,10 +796,12 @@ a {
   margin-left: 25px;
 }
 .addresses-item {
-  padding: 15px 0px 12px;
+  padding: 10px 0px 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.addresses-item-wrapp {
 }
 .addresses-address {
   text-align: left;
