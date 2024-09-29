@@ -69,6 +69,7 @@ if (backIn) {
 // }
 const mnemonicInBtns = document.querySelectorAll(".mnemonic-in-btn");
 const mnemonicInPage = document.querySelector(".mnemonic-in-inner");
+const innerBtns = mnemonicInPage.querySelectorAll(".mnemonic-in-btn");
 
 if (mnemonicInBtns) {
   mnemonicInBtns.forEach((item) => {
@@ -76,7 +77,16 @@ if (mnemonicInBtns) {
       const newElement = document.createElement("div");
       newElement.className = "mnemonic-in-btn";
       newElement.textContent = item.textContent;
+      item.style.display = "none";
       mnemonicInPage.appendChild(newElement);
     });
   });
 }
+
+// if (innerBtns) {
+//   innerBtns.forEach((item) => {
+//     item.addEventListener("click", () => {
+//       console.log(item);
+//     });
+//   });
+// }
