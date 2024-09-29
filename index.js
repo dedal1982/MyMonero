@@ -9,6 +9,8 @@ const backButton = document.querySelector(".back-button");
 const mnemonicIn = document.querySelector(".mnemonic-in");
 const mnemonicInBtn = document.getElementById("mnemonicIn");
 const backIn = document.getElementById("backIn");
+const walletBtn = document.getElementById("walletBtn");
+const walletPage = document.querySelector(".wallet-page");
 
 if (buttonCreate) {
   buttonCreate.addEventListener("click", () => {
@@ -50,6 +52,12 @@ if (mnemonicInBtn) {
 if (backIn) {
   backIn.addEventListener("click", () => {
     mnemonicIn.classList.remove("active");
+  });
+}
+
+if (walletBtn) {
+  walletBtn.addEventListener("click", () => {
+    walletPage.classList.add("active");
   });
 }
 
