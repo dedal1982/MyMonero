@@ -14,6 +14,7 @@ const walletPage = document.querySelector(".wallet-page");
 const walletPageBoxBtn = document.querySelector(".wallet-page-box");
 const walletTransact = document.querySelector(".wallet-transact");
 const backInTwo = document.getElementById("backInTwo");
+const LogOut = document.getElementById("LogOut");
 
 if (buttonCreate) {
   buttonCreate.addEventListener("click", () => {
@@ -72,6 +73,12 @@ if (walletPageBoxBtn) {
 
 if (backInTwo) {
   backInTwo.addEventListener("click", () => {
+    walletTransact.classList.remove("active");
+  });
+}
+
+if (LogOut) {
+  LogOut.addEventListener("click", () => {
     walletTransact.classList.remove("active");
   });
 }
